@@ -40,15 +40,51 @@
             margin: 0 23px;
         }
 
+        nav ul li a{
+            text-decoration: none;
+            margin: 0 23px;
+            color: whitesmoke;
+        }
+
+        nav ul li a:hover{
+            color: rgb(249, 244, 244);
+            background-color: rgb(73, 12, 12);
+            padding: 25px;
+            border:0ch
+        }
+        
         .left{
             font-size: 1.5rem;
+            color: whitesmoke;
         }
 /* --------------------------------------------------Main CSS----------------------------------------------------------------------------------------- */
 
         .firstsection{
             display: flex;
-            justify-content: center;
-            
+            justify-content: space-around;
+            align-items: center;            
+        }
+
+        .firstsection > div{
+            width: 30%;
+        }
+
+        .leftsection{
+            /* background-color: red; */
+            font-size: 2.7rem;
+            margin: 40px 0;
+        }
+
+        .light{
+            color: rgb(45, 187, 2);
+        }
+        .rightsection{
+            /* background-color: red; */
+            padding: 50px 0 0 80px;
+        }
+
+        #element{
+            color: rgb(180, 15, 15);
         }
     </style>
 </head>
@@ -60,15 +96,15 @@
     <header>
         <nav>
             <div class="left">
-                Dhananjay's Portfolieo
+                Dhananjay's Portfolio
             </div>
 
             <div class="right">
                 <ul>
-                    <li>Home</li>
-                    <li>Education</li>
-                    <li>Projects</li>
-                    <li>Contact Me</li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">Education</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
 
                 </ul>
             </div>
@@ -78,14 +114,26 @@
     <main>
         <section  class = "firstsection">
             <div class="leftsection">
-                Hii I am Dhananjay
+                Hii, I am <span class="light">Dhananjay</span>  
+                <div> With expertise in <span id="element"></span> </div>   
             </div>
 
             <div class="rightsection">
-                Image
+                <img src="resource/developer.png"  height="300" width="300">
             </div>
         </section>
     </main>
+
+
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developing', 'Machine Learning' , 'Data Analyst'],
+          typeSpeed: 125,
+        }); 
+      </script>
 
 </body>
 
