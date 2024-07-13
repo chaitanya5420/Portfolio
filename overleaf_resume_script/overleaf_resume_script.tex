@@ -1,0 +1,283 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+
+
+
+
+
+
+
+
+
+
+% ----------------------------Upper side information-----------------
+
+\begin{center}
+    \textbf{\Huge \scshape Dhananjay Sharma} \\ \vspace{1pt}
+    \small +91 7792947599 $|$ \href{dhananjayasharma43@gmail.com}{\underline{dhananjayasharma43@gmail.com}} $|$ 
+    \href{ https://www.linkedin.com/in/dhananjay-sharma-data-science/
+}{\underline{linkedin}} $|$
+    \href{https://github.com/store-future}{\underline{github}}
+\end{center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-----------------------PROGRAMMING SKILLS---------------------------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item
+        {
+         \textbf{Languages}{:  Python, Html, Css} \\
+         \textbf{Frameworks/Libraries}{:  Django, Rest-API, Pandas, Open-Cv, Tensorflow, Matplotlib} \\
+         \textbf{Developer Tools}{: Power BI, Vs code, Jupyter Notebook, GitHub} \\
+        }
+    }
+ \end{itemize}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%------------------------EXPERIENCE----------------------------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Robotics Trainer} {Feb 2024 -- Present} {Problem Solver} {Jaipur}
+      \resumeItemListStart
+        \resumeItem{Studybuddy Web Application}
+        \resumeItem{ Delivered 15+ workshops and seminars in colleges and schools, educating over 2000+ students on robotics and machine learning.}
+        % \resumeItem{New Line}
+    \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+% -------------------------------------------
+
+    % \resumeSubheading
+    %   {Information Technology Support Specialist}{Sep. 2018 -- Present}
+    %   {Southwestern University}{Georgetown, TX}
+    %   \resumeItemListStart
+    %     \resumeItem{bullet point}
+    %     \resumeItem{bullet point}
+    % \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+% \item \textbf{Project 1} {Language 1, Framework 1, Database, Language 2, Framework 2, DevOps Tooling} \hfill \href{www.github.com/GITHUBURL}{GitHub}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeProjectHeading
+          {\textbf{Studybuddy Web Application} $|$ \emph{Python, Django,REST-API}} {\href{https://github.com/store-future/web_application_projects}{GitHub}}{} 
+              \resumeItemListStart
+                \resumeItem{ Developed a web application ,enabling global connection and online discussion, Implemented user authentication , search bar functionality and personal user profile}
+                \resumeItem{Strengthened platform security by implementing user access restriction , unauthorized editing of chat rooms etc.}
+                \resumeItem{ Use Sqlite to manage its database backend}
+              \resumeItemListEnd
+              
+        \resumeProjectHeading
+          {\textbf{Content Based Movie Recommendation System} $|$ \emph{Python, Pandas, Machine Learning}} {\href{https://github.com/store-future/Machine-Learning-Projects/tree/main/recommendation_system}{GitHub}}{} 
+              \resumeItemListStart
+                \resumeItem{Developed a content-based recommendation engine that enhanced user experience by generating personalized movie
+                recommendations based on content similarity,}
+                \resumeItem{Use ETL method to Prepared, extract and transform data from a dataset of 5,000 movies using Python, Pandas and NLP techniques to extract meaningful features from dataset, enabling seamless integration with the recommendation engine}
+                \resumeItem{Prepared a comprehensive report on concepts and techniques employed in the project, documenting key development
+                methodologies, tools, shared on Microsoft Docs platform for knowledge sharing and future reference.}
+              \resumeItemListEnd
+              
+
+    \resumeSubHeadingListEnd
+
+
+
+
+
+%------------------------------EDUCATION----------------------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {JECRC UNIVERSITY}{ Jaipur, Rajasthan}
+      {Masters of Computer Application}{Sep 2022 - Jun 2024}
+    \resumeSubheading
+      {Swami Vivekananda university }{Meerut, Up}
+      {Bachelors of Science}{Jun 2019 - Jun 2022}
+    \resumeSubheading
+      {Sony Academy Sr. Sec. School }{Bharatpur, Rajasthan}
+      {XII}{May 2017 - Jun 2018}
+  \resumeSubHeadingListEnd
+
+
+
+
+
+
+
+
+%-------------------------------------------
+\end{document}
