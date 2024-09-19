@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhananjay - Portfolieo</title>
+    <title>Dhananjay - Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
     <style>
         * {
             margin: 0;
             padding: 0;
-            color : green;
-            fasf
+            box-sizing: border-box;
+            color: rgb(209, 209, 209);
         }
 
         body {
@@ -23,75 +24,161 @@
             color: white;
             font-family: "Roboto", sans-serif;
         }
-/* ------------------------------------------------Nav Bar CSS------------------------------------------------------------------------------------------ */
-        nav{
+
+        /* ------------------------------------------------Nav Bar CSS------------------------------------------------------------------------------------------ */
+        nav {
             display: flex;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
             height: 80px;
-            background-color: rgba(1, 23, 27, 0.978) ;
+            padding: 0 20px;
+            background-color: rgba(1, 23, 27, 0.978);
         }
 
-        nav ul{
+        nav ul {
             display: flex;
             justify-content: center;
+            list-style: none;
         }
 
         nav ul li {
-            list-style: none;
-            margin: 0 23px;
+            margin: 0 15px;
         }
 
-        nav ul li a{
+        nav ul li a {
             text-decoration: none;
-            margin: 0 23px;
             color: whitesmoke;
         }
 
-        nav ul li a:hover{
+        nav ul li a:hover {
             color: rgb(249, 244, 244);
             background-color: rgb(73, 12, 12);
-            padding: 25px;
-            border:0ch
+            padding: 5px 10px;
+            border-radius: 5px;
         }
-        
-        .left{
+
+        .left {
             font-size: 1.5rem;
             color: whitesmoke;
         }
-/* --------------------------------------------------Main CSS----------------------------------------------------------------------------------------- */
 
-        .firstsection{
+        /* Hamburger icon styles */
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .hamburger div {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 4px 0;
+        }
+
+        /* Hide the navigation links on mobile */
+        .right ul {
             display: flex;
-            justify-content: space-around;
-            align-items: center;            
         }
 
-        .firstsection > div{
-            width: 30%;
+        /* --------------------------------------------------Main CSS----------------------------------------------------------------------------------------- */
+        .firstsection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 20px;
         }
 
-        .leftsection{
-            /* background-color: red; */
-            font-size: 2.7rem;
-            margin: 40px 0;
+        .firstsection>div {
+            width: 45%;
         }
 
-        .light{
+        .leftsection {
+            font-size: 2.5rem;
+            margin: 20px 0;
+        }
+
+        .light {
             color: rgb(45, 187, 2);
         }
-        .rightsection{
-            /* background-color: red; */
-            padding: 50px 0 0 80px;
+
+        .rightsection {
+            padding: 20px;
+            text-align: center;
         }
 
-        #element{
+        .rightsection img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        #element {
             color: rgb(180, 15, 15);
+        }
+
+        /* --------------------------------------------------Responsive CSS----------------------------------------------------------------------------------------- */
+
+        @media screen and (max-width: 768px) {
+            /* Hide the nav links and show hamburger on mobile */
+            .right ul {
+                display: none;
+                flex-direction: column;
+                background-color: rgba(1, 23, 27, 0.978);
+                position: absolute;
+                top: 80px;
+                right: 0;
+                width: 100%;
+                text-align: center;
+            }
+
+            nav ul li {
+                margin: 15px 0;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            /* When active, display the menu */
+            .right ul.active {
+                display: flex;
+            }
+
+            .firstsection>div {
+                width: 100%;
+                text-align: center;
+            }
+
+            .leftsection {
+                font-size: 2rem;
+            }
+
+            .rightsection img {
+                max-width: 80%;
+                margin: 20px 0;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .leftsection {
+                font-size: 1.7rem;
+            }
+
+            .firstsection {
+                padding: 10px;
+            }
+
+            nav ul li {
+                margin: 8px 0;
+            }
+
+            nav ul li a {
+                font-size: 1.2rem;
+            }
         }
     </style>
 </head>
-
-
 
 <body>
 
@@ -101,44 +188,53 @@
                 Dhananjay's Portfolio
             </div>
 
+            <!-- Hamburger icon for mobile -->
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
             <div class="right">
-                <ul>
+                <ul id="nav-links">
                     <li><a href="/">Home</a></li>
-                    <li><a href="/">Education</a></li>
+                    <li><a href="/">Skills</a></li>
                     <li><a href="/">Projects</a></li>
                     <li><a href="/">Contact Me</a></li>
-
                 </ul>
             </div>
         </nav>
     </header>
 
     <main>
-        <section  class = "firstsection">
+        <section class="firstsection">
             <div class="leftsection">
-                Hii, I am <span class="light">Dhananjay</span>  
-                <div> With expertise in <span id="element"></span> </div>   
+                Hii, I am <span class="light">Dhananjay</span>
+                <div> With expertise in <span id="element"></span> </div>
             </div>
 
             <div class="rightsection">
-                <img src="resource/developer.png"  height="300" width="300">
+                <img src="resource/developer.png" alt="Developer">
             </div>
         </section>
     </main>
 
-
-
-
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
         var typed = new Typed('#element', {
-          strings: ['Web Developing', 'Machine Learning' , 'Data Analyst'],
-          typeSpeed: 125,
-        }); 
-      </script>
+            strings: ['Web Developing', 'Machine Learning', 'Data Analyst'],
+            typeSpeed: 125,
+        });
+
+        // Toggle the mobile nav
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
 
 </body>
-
-
 
 </html>
