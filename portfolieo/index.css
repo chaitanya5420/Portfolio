@@ -1,0 +1,227 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {  width:100%;  height:100vh; }
+  body {
+    position:absolute;
+    width:100%;  height:100vh;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background:#dee2eb;
+  }
+
+  /* ------------------------------All sectiomn css---------------------------- */
+  .section {
+    padding: 100px 20px;
+    margin-top: 80px;
+    height: 100vh;
+
+  }
+  
+  /* ------------------------------nav---------------------------- */
+  
+  nav {
+    top: 0;
+    width: 100%;
+    background: #333;
+    padding: 1rem;
+    z-index: 100;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  nav ul li {
+    list-style: none;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  
+  /* --------------------------home section------------------------------------ */
+ 
+  #home {
+    margin: 0;
+    top: 0; 
+    display: flex;
+    /* background:#A9A9A9; */
+    
+}
+
+
+/* BVAmbient Style */
+.bvambient_particle
+{
+	position: absolute;
+	pointer-events: none;
+	transition: top linear, left linear;
+}
+
+
+
+  
+  .left {
+    flex: 1;
+    padding-top:6%;
+    padding-left:7%;
+
+  }
+
+
+  .brief {
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+
+  #element {
+   color: rgb(0, 0, 255);
+  }
+
+  .light{
+    color:red;
+  }
+
+  .right {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .right img {
+    width: 500px;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .social-media a {
+    margin-right: 10px;
+  }
+  
+  /* ------------------------skills---------------------------- */
+  #skills {
+    /* background-color: #f9f9f9; */
+    background:black; 
+
+  }
+
+  .card-title {
+    text-align: center;
+  }
+
+
+
+  .container{
+    background:black;
+  }
+
+  .container-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background:blue;
+  }
+
+  .box {
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+    text-align: center;
+    background:white;
+  }
+  .box img {
+    max-width: 100px;
+    margin: 10px 0;
+  }
+
+
+  /* ------------------------------projets-------------------------- */
+
+  #projects {
+    background-color: #f1f1f1;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-item {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  .project-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .github-link {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .project-item:hover .github-link {
+    display: inline-block;
+  }
+
+  /* -------------------------------------Contact Me---------------------------- */
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input, form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+   .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+    gap: 16px; 
+  } 
+  
+  .skill-item {
+    background-color: #f8f9fa; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    padding: 20px;
+    text-align: center; 
+    font-weight: bold; 
+  }
