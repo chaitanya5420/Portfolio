@@ -22,7 +22,10 @@
   }
   
   /* ------------------------------nav---------------------------- */
-  
+  .navbar{
+    position:fixed !important;
+
+  }
   nav {
     top: 0;
     width: 100%;
@@ -61,11 +64,9 @@
 .bvambient_particle
 {
 	position: absolute;
-	pointer-events: none;
+	pointer-events: none; 
 	transition: top linear, left linear;
 }
-
-
 
   
   .left {
@@ -116,39 +117,56 @@
   /* ------------------------skills---------------------------- */
   #skills {
     /* background-color: #f9f9f9; */
-    background:black; 
+    /* background:black;  */
+    background: radial-gradient(circle, rgba(76,72,80,1) 0%, rgba(0,0,0,1) 94%, rgba(0,0,0,1) 100%);
+    border:5px solid black;
+    padding:3%;
 
   }
 
-  .card-title {
-    text-align: center;
+.row{
+  transform:scale(0.8);
+}
+
+  .title{
+    color:white;
   }
 
-
-
-  .container{
-    background:black;
-  }
-
-  .container-box {
+.container-box {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background:blue;
+    position: relative;
+    width: 80% !important;
+    /* padding-left: 10% !important;
+    padding-right: 10% !important;  */
+    top:2px;
+    left:9%;
+    /* border: 1.5px solid white !important; */
+
   }
 
   .box {
     padding: 20px;
-    border: 1px solid #ddd;
-    margin: 10px;
+    box-shadow: rgba(150, 100, 111, 0.7) 0px 7px 29px 0px;    height:210px;
+    border-radius: 20%;
+    border: 1.5px solid red;
     text-align: center;
-    background:white;
+    transform:scale(0.7);
+    transition: transform 0.3s ease;
+
+
+  }
+
+  .box:hover{
+    background-color: black;
+    transform: scale(1);
+
   }
   .box img {
     max-width: 100px;
-    margin: 10px 0;
-  }
+  } 
 
+  
+  
 
   /* ------------------------------projets-------------------------- */
 
@@ -167,7 +185,7 @@
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    position: relative;
+    /* position: relative; */
     transition: transform 0.3s ease;
   }
   
@@ -191,37 +209,80 @@
   }
 
   /* -------------------------------------Contact Me---------------------------- */
-  
+
   form {
     display: flex;
     flex-direction: column;
+    /* border: 2px solid red; */
+    width: 70%;
+    margin-left:  auto; /* This centers the form horizontally */
+    padding:20px;
   }
+  
+
+  form input, form textarea, label{
+    padding-top:15px;
+  }
+
   
   form input, form textarea {
-    margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
+    width:60%;
   }
+
+  form input {
+  height:40px;
+  padding:0 auto;
   
+  }
+
+
+
+
   button {
     padding: 10px;
     background-color: #007BFF;
     color: white;
     border: none;
     cursor: pointer;
+    margin-top:10px !important;
+    width:25%;
+    margin-left:17% !important;
+
   }
   
-   .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-    gap: 16px; 
-  } 
-  
-  .skill-item {
-    background-color: #f8f9fa; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    padding: 20px;
-    text-align: center; 
-    font-weight: bold; 
+
+
+  /* --------------------------------footer----------------------------------- */
+  footer {
+    background-color: #222; /* Dark background */
+    color: #fff; /* White text */
+  }
+  footer h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  footer p, footer ul {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+  }
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  footer a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  footer a i {
+    margin-right: 8px; /* Adds space between icon and text */
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  hr {
+    border: 1px solid #555;
+    width: 100%;
   }
