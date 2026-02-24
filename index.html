@@ -1,207 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio</title>
-  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="index.css?v=102" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <body>
 
   <!-- Navbar -->
-  <nav id="navbar-example2" class="navbar bg-body-tertiary px-3 mb-3">
-    <a class="navbar-brand" href="#">Chaitanya Sharma</a>
-    <ul class="nav nav-pills">
-      <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-      <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-      <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-      <li class="nav-item"><a class="nav-link" href="#contact">Contact Me</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="nav-scroll-indicator"></div>
+    <div class="container-fluid px-4">
+      <a class="navbar-brand" href="#">Chaitanya Sharma</a>
+      <!-- Resume button (hidden on desktop, shown on small screens) -->
+      <a class="resume-link" href="resources/resume.pdf" target="_blank" rel="noopener">Resume</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active magnetic-btn magnetic-attraction" >Chaitanya</a></li>
+
+          <li class="nav-item"><a class="nav-link active magnetic-btn magnetic-attraction" href="#home">HOME</a></li>
+          <li class="nav-item"><a class="nav-link magnetic-btn magnetic-attraction" href="#skills">SKILLS</a></li>
+          <li class="nav-item"><a class="nav-link magnetic-btn magnetic-attraction" href="#projects">PROJECTS</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <!-- Home Section -->
-  <div id="ambient" style="position: fixed; top: 0; left: 0; width: 100%; height: 100vh; z-index: -1;"></div>
 
+  <!-- Home Section -->
   <section id="home" class="section home">
+    <div id="ambient"
+      style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; opacity: 0.3;">
+    </div>
     <div class="left">
       <div class="brief">
         Hi, I am <span class="light">Chaitanya</span>
         <div> With expertise in <span id="element"></span> </div>
         <!--<a href="resources/resume.pdf" class="btn btn-primary" download>Download CV</a> -->
         <div class="social-media">
-          <a class="btn btn-success" href="https://github.com/chaitanya5420">GitHub</a>
-          <a class="btn btn-success" href="https://www.linkedin.com/in/chaitanya-sharma-920923279/">LinkedIn</a>
+          <a class="btn btn-success magnetic-btn magnetic-attraction" href="https://github.com/chaitanya5420">GitHub</a>
+          <a class="btn btn-success magnetic-btn magnetic-attraction"
+            href="https://www.linkedin.com/in/chaitanya-sharma-920923279/">LinkedIn</a>
+          <a class="btn btn-success magnetic-btn magnetic-attraction" href="resources/chaitanyasharma_resume.pdf" target="_blank" rel="noopener" download>Resume</a>
         </div>
       </div>
     </div>
     <div class="right">
-      <img src="resources/mypic.jpeg" alt="Your Image" />
+      <img src="resources/mainimage.jpeg" alt="Your Image" class="magnetic-attraction" />
     </div>
   </section>
 
 
 
   <!-- Skills Section -->
-<section id="skills" class="section py-5" style="background: linear-gradient(to right, #1f1c2c, #928dab); color: white;">
-  <div class="container text-center">
-    <h2 class="mb-4 fw-bold">Skills</h2>
-    <div class="row row-cols-1 row-cols-md-4 g-4">
-      <div class="col">
-        <div class="card h-100 bg-dark text-white shadow-lg border-0">
-          <div class="card-body">
-            <img src="resources/photoshop.png" alt="Photoshop" style="height: 60px; margin-bottom: 10px;">
-            <h5 class="card-title">Adobe Photoshop</h5>
+  <section id="skills" class="section">
+    <div class="container text-center">
+      <h2 class="title mb-4 fw-bold">Skills</h2>
+      <div class="row row-cols-1 row-cols-md-4 g-4">
+        <div class="col skill-card skill-ps">
+          <div class="box">
+            <div class="card-body">
+              <img src="resources/photoshop.png" alt="Photoshop">
+              <h5>Adobe Photoshop</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col skill-card skill-csp">
+          <div class="box">
+            <div class="card-body">
+              <img src="resources/clip_studio_paint.png" alt="Clip Studio Paint">
+              <h5>Clip Studio Paint</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col skill-card skill-krita">
+          <div class="box">
+            <div class="card-body">
+              <img src="resources/krita.png" alt="Krita">
+              <h5>Krita</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col skill-card skill-gimp">
+          <div class="box">
+            <div class="card-body">
+              <img src="resources/gimp.png" alt="GIMP">
+              <h5>GIMP</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col skill-card skill-blender">
+          <div class="box">
+            <div class="card-body">
+              <img src="resources/blender.png" alt="Blender">
+              <h5>Blender</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col skill-card skill-unity">
+          <div class="box">
+            <div class="card-body">
+              <img src="resources/unity.png" alt="Unity">
+              <h5>Unity</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col skill-card skill-zbrush">
+          <div class="box">
+            <div class="card-body">
+              <img src="resources/zbrush.png" alt="ZBrush">
+              <h5>ZBrush</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col skill-card skill-marvelous">
+          <div class="box">
+            <div class="card-body">
+              <img src="resources/marvelous_designer.png" alt="Marvelous Designer">
+              <h5>Marvelous Designer</h5>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-100 bg-dark text-white shadow-lg border-0">
-          <div class="card-body">
-            <img src="resources/clip_studio_paint.png" alt="Clip Studio Paint" style="height: 60px; margin-bottom: 10px;">
-            <h5 class="card-title">Clip Studio Paint</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 bg-dark text-white shadow-lg border-0">
-          <div class="card-body">
-            <img src="resources/krita.png" alt="Krita" style="height: 60px; margin-bottom: 10px;">
-            <h5 class="card-title">Krita</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 bg-dark text-white shadow-lg border-0">
-          <div class="card-body">
-            <img src="resources/gimp.png" alt="GIMP" style="height: 60px; margin-bottom: 10px;">
-            <h5 class="card-title">GIMP</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 bg-dark text-white shadow-lg border-0">
-          <div class="card-body">
-            <img src="resources/blender.png" alt="Blender" style="height: 60px; margin-bottom: 10px;">
-            <h5 class="card-title">Blender</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 bg-dark text-white shadow-lg border-0">
-          <div class="card-body">
-            <img src="resources/tiled.jpg" alt="Tiled" style="height: 60px; margin-bottom: 10px;">
-            <h5 class="card-title">Tiled</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 bg-dark text-white shadow-lg border-0">
-          <div class="card-body">
-            <img src="resources/zbrush.png" alt="ZBrush" style="height: 60px; margin-bottom: 10px;">
-            <h5 class="card-title">ZBrush</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 bg-dark text-white shadow-lg border-0">
-          <div class="card-body">
-            <img src="resources/marvelous_designer.png" alt="Marvelous Designer" style="height: 60px; margin-bottom: 10px;">
-            <h5 class="card-title">Marvelous Designer</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
-  <!-- Projects Section -->
-  <!-- Projects Section -->
-<section id="projects" class="section bg-light py-5">
-  <div class="container">
-    <h2 class="text-center mb-5">Projects</h2>
-    <div class="row row-cols-1 row-cols-md-5 g-4"> 
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="resources/arch-demon.png" class="card-img-top project-image" alt="Drawing 1" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="resources/bg.png" class="card-img-top project-image" alt="Drawing 2" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="resources/dragon.png" class="card-img-top project-image" alt="Drawing 3" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="resources/rem.png" class="card-img-top project-image" alt="Drawing 4" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="resources/priest.png" class="card-img-top project-image" alt="Drawing 5" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="resources/oc.png" class="card-img-top project-image" alt="Drawing 6" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="resources/miku.png" class="card-img-top project-image" alt="Drawing 7" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="resources/wale.png" class="card-img-top project-image" alt="Drawing 8" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="resources/wall.png" class="card-img-top project-image" alt="Drawing 9" />
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100 shadow-sm">
-          <img src="resources/wall2.png" class="card-img-top project-image" alt="Drawing 10" />
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-  
-
-  <!-- Contact Section -->
-  <section id="contact" class="section bg-dark text-white py-5">
-    <div class="container">
-      <h1 class="text-center display-4 mb-4">Contact Me</h1>
-      <form>
-        <div class="mb-3">
-          <label for="name" class="form-label">Name</label>
-          <input type="text" id="name" name="name" class="form-control" required />
-        </div>
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" id="email" name="email" class="form-control" required />
-        </div>
-        <div class="mb-3">
-          <label for="message" class="form-label">Message</label>
-          <textarea id="message" name="message" class="form-control" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Send</button>
-      </form>
     </div>
   </section>
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="title text-center mb-5">Projects</h2>
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="resources/arch-demon.png" class="card-img-top project-image" alt="Drawing 1" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="resources/bg.png" class="card-img-top project-image" alt="Drawing 2" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="resources/dragon.png" class="card-img-top project-image" alt="Drawing 3" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="resources/rem.png" class="card-img-top project-image" alt="Drawing 4" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="resources/priest.png" class="card-img-top project-image" alt="Drawing 5" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="resources/oc.png" class="card-img-top project-image" alt="Drawing 6" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="resources/miku.png" class="card-img-top project-image" alt="Drawing 7" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="resources/wale.png" class="card-img-top project-image" alt="Drawing 8" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="resources/wall.png" class="card-img-top project-image" alt="Drawing 9" />
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100 shadow-sm">
+            <img src="resources/wall2.png" class="card-img-top project-image" alt="Drawing 10" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
 
   <!-- Footer -->
   <footer style="background-color: #222; color: #fff; padding: 40px 0;">
@@ -209,7 +204,9 @@
       <div class="row">
         <div class="col-md-4">
           <h4>About Me</h4>
-          <p>I am a passionate 2D and 3D artist specializing in creating immersive and detailed artwork for games, animations, and various creative projects. My goal is to bring visual stories to life through both traditional and digital mediums.</p>
+          <p>I am a passionate 2D and 3D artist specializing in creating immersive and detailed artwork for games,
+            animations, and various creative projects. My goal is to bring visual stories to life through both
+            traditional and digital mediums.</p>
         </div>
         <div class="col-md-4">
           <h4>Contact Info</h4>
@@ -224,30 +221,71 @@
           <ul style="list-style: none; padding-left: 0;">
             <li><a href="#" style="color: #fff;"><i class="fab fa-facebook"></i> Facebook</a></li>
             <li><a href="#" style="color: #fff;"><i class="fab fa-twitter"></i> Twitter</a></li>
-            <li><a href="https://www.linkedin.com/in/chaitanya-sharma-920923279/" style="color: #fff;"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-            <li><a href="https://github.com/chaitanya5420" style="color: #fff;"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/chaitanya-sharma-920923279/" style="color: #fff;"><i
+                  class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://github.com/chaitanya5420" style="color: #fff;"><i class="fab fa-github"></i> GitHub</a>
+            </li>
           </ul>
         </div>
       </div>
       <hr style="border-color: #555;" />
       <div class="text-center pt-2">
-        <p>&copy; 2024 Dhananjay Sharma. All rights reserved. | <a href="#" style="color: #fff;">Terms and Conditions</a></p>
+        <p>&copy; 2024 Dhananjay Sharma. All rights reserved. | <a href="#" style="color: #fff;">Terms and
+            Conditions</a></p>
       </div>
     </div>
   </footer>
 
   <!-- JS Libraries -->
   <script src="bvambient.js"></script>
-  <script src="index.js"></script>
+  <script src="index.js?v=1.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
   <script>
     var typed = new Typed('#element', {
-      strings: ['2d Artist', '3d Artist'],
+      strings: ['2D', '3D', 'Concept Art'],
       typeSpeed: 125,
       loop: true,
     });
   </script>
 
+  <!-- Artwork View Modal -->
+  <div class="modal fade" id="artworkModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" style="max-width: fit-content; margin: auto;">
+      <div class="modal-content" style="background: transparent !important; border: none !important;">
+        <div class="modal-body p-0 text-center position-relative">
+          <button type="button" class="btn-close btn-close-white position-absolute" data-bs-dismiss="modal"
+            aria-label="Close"
+            style="top: 15px; right: 15px; z-index: 1060; background-color: rgba(0,0,0,0.5); border-radius: 50%; opacity: 1; padding: 10px;"></button>
+          <img id="modalArtImage" src="" alt="Artwork" class="img-fluid"
+            style="max-height: 90vh; width: auto; border: 3px solid #fff; border-radius: 12px; box-shadow: 0 10px 50px rgba(0,0,0,0.8);">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal = new bootstrap.Modal(document.getElementById('artworkModal'));
+      const modalImg = document.getElementById('modalArtImage');
+
+      document.querySelectorAll('.project-image').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', () => {
+          modalImg.src = img.src;
+          modal.show();
+        });
+      });
+    });
+  </script>
+
+    <!-- Ensure sections are visible by default (reveal animation trigger) -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.section').forEach(el => el.classList.add('reveal'));
+      });
+    </script>
+
 </body>
+
 </html>
