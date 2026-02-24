@@ -355,6 +355,44 @@ body {
     width: 100% !important;
     top: 0 !important;
   }
+
+  .navbar-toggle-icon {
+    display: flex !important;
+    font-size: 1.5rem;
+    color: #00f2ff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-toggle-icon:hover {
+    color: #bc13fe;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(10, 15, 29, 0.95) !important;
+    backdrop-filter: blur(25px);
+    border-top: 1px solid rgba(0, 242, 255, 0.2);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+
+  .navbar-collapse.show {
+    max-height: 400px;
+    padding: 1rem;
+  }
+
+  .navbar-collapse .navbar-nav {
+    flex-direction: column;
+  }
+
+  .navbar-collapse .nav-link {
+    padding: 0.5rem 0 !important;
+  }
 }
 
 .navbar {
@@ -369,6 +407,10 @@ body {
   padding: 0 !important;
   display: flex !important;
   justify-content: center;
+}
+
+.navbar-toggle-icon {
+  display: none !important;
 }
 
 nav {
@@ -772,8 +814,21 @@ nav ul li a {
   }
 
   .brief {
+    font-size: 1.8rem !important;
+    line-height: 1.4;
+    word-spacing: 0.1em;
+  }
+
+  .light {
+    font-size: 2.2rem !important;
+    display: inline-block;
+  }
+}
+
+@media (max-width: 768px) {
+  .brief {
     font-size: 1.6rem !important;
-    /* Scaled down */
+    line-height: 1.5;
   }
 
   .light {
@@ -783,7 +838,13 @@ nav ul li a {
 
 @media (max-width: 480px) {
   .brief {
-    font-size: 1.4rem !important;
+    font-size: 1.3rem !important;
+    line-height: 1.6;
+    margin: 15px 0;
+  }
+
+  .light {
+    font-size: 1.7rem !important;
   }
 
   .social-media a.btn-success {
@@ -811,7 +872,7 @@ nav ul li a {
   flex: 1;
   padding-top: 6%;
   padding-left: 7%;
-
+  max-width: 100%;
 }
 
 
@@ -819,6 +880,9 @@ nav ul li a {
   font-size: 2.5rem;
   margin: 20px 0;
   color: #b8b8b8;
+  line-height: 1.3;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 #element {
